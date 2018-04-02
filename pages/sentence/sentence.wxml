@@ -1,0 +1,30 @@
+<view class="nav-wraper">
+  <view class="{{navItemSelectStatus.today?'nav-item active':'nav-item'}}" bindtap='queryWord' data-daterange="today">今日</view>
+  <view class="{{navItemSelectStatus.yesterday?'nav-item active':'nav-item'}}" bindtap='queryWord' data-daterange="yesterday">昨日</view>
+  <view class="{{navItemSelectStatus.week?'nav-item active':'nav-item'}}" bindtap='queryWord' data-daterange="week">近一周</view>
+  <view class="{{navItemSelectStatus.all?'nav-item active':'nav-item'}}" bindtap='queryWord' data-daterange="all">全部</view>
+</view>
+<view class="section" style="display:{{showWordDetail?'none':'block'}};"  wx:if="{{!false}}" wx:for-index="letterIndex" wx:for-item="letterName" wx:for="{{lettersArr}}">
+  <view class="letter">{{letterName}}</view>
+  <view class="word-wraper" wx:if="{{page[letterName]}}">
+    <view class="word-item" 
+    data-worditem="{{wordItem}}"
+    bindlongpress="handleDelete"
+    bindtap="handleShowWordDetail"
+     wx:for-index="wordIndex" wx:for-item="wordItem" wx:for="{{page[letterName]}}">{{wordItem.value}}</view>
+  </view>
+   <view class="word-wraper" wx:if="{{!page[letterName]}}">
+    <view class="word-empty">该字母下暂无句子,
+    <navigator url="/pages/single-add/single-add?type=sentence"  open-type="navigateTo" class="go-addurl">去添加</navigator>
+    </view>
+  </view>
+</view>
+<view class='mask' wx:if="{{showWordDetail}}">
+</view>
+<view class="detail-wraper" wx:if="{{showWordDetail}}">
+    <view class="word-value">{{wordItem.value}}</view>
+    <view class="word-detail">{{wordItem.desc}}</view>
+     <view class="detail-bottom">
+       <button  class='detail-closebtn' bindtap="handleWordDetailClose">关闭</button>
+     </view>
+</view>

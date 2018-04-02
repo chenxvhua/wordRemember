@@ -1,0 +1,30 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+
+.nav-wraper {
+  overflow: hidden;
+}
+
+.nav-wraper .nav-item {
+  float: left;
+  padding: 5px 20px;
+  border:1px solid #EEEEEE;
+  font-size: 14px;
+}
+
+
+.nav-wraper .nav-item.active {
+   color:red;
+   border-bottom: none;
+}
+

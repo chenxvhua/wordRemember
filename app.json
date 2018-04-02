@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/manage/manage",
+    "pages/sentence/sentence",
+    "pages/single-add/single-add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "英语单词分类速记",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "单词",
+        "iconPath": "images/word-dark.png",
+        "selectedIconPath": "images/word-light.png"
+      },
+      {
+        "pagePath": "pages/sentence/sentence",
+        "text": "常用语",
+        "iconPath": "images/sentence-dark.png",
+        "selectedIconPath": "images/sentence-light.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "管理中心",
+        "iconPath": "images/manage-dark.png",
+        "selectedIconPath": "images/manage-light.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+/* pages/add/add.wxss */
+.section {
+
+}
+.form-item {
+   border: 1px solid #EEEEEE;
+   margin:5px;
+}
+.operation-type {
+  padding: 10px 20px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.form-bottom {
+   text-align: center;
+}
+
+.save-btn {
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+    width: 150rpx;
+    font-size: 14px;
+}
+
+.form-item {
+  padding: 20px;
+}

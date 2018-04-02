@@ -1,0 +1,79 @@
+.word-wraper {
+  overflow: hidden;
+}
+.section {
+   margin-bottom: 10px;
+}
+.section .letter {
+   border-bottom: 1px solid #EEEEEE;
+   padding-left:10px;
+}
+.word-item {
+  float: left;
+  margin:3px;
+  padding: 5px;
+  line-height: 22px;
+  height: 22px;
+  border-radius:5px;
+  color: #666666;
+  background-color: #EEEEEE;
+}
+.word-empty {
+  font-size: 12px;
+  line-height: 22px;
+  height: 22px;
+  padding: 20px;
+}
+.go-addurl {
+  display: inline;
+  color:#409eff;
+}
+
+/* word detail */
+.detail-wraper {
+  border:1px solid #F2F2F2; 
+  background: #fff;
+  position:fixed;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom: 0px;
+  margin: auto;
+  width: 96%;
+  height: 80%;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.word-value {
+    padding: 10px 20px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.word-detail {
+    padding: 10px 20px;
+    white-space:pre;
+}
+
+.detail-closebtn {
+    color: #000;
+    background-color: #ddd;
+    border-color: #ddd;
+    width: 150rpx;
+    font-size: 14px;
+    position: absolute;
+    bottom:50rpx;
+    margin: auto;
+    left:0px;
+    right: 0px;
+}
+
+.mask {
+  position: absolute;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  opacity: 0.5;
+  background:#000;
+}

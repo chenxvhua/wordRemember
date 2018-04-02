@@ -1,0 +1,38 @@
+<view class="section" wx:if="{{showWord}}">
+  <view class="operation-type">单词添加</view>
+  <view class="form-wraper">
+    <view class="form-item">
+      <input placeholder="请输入单词" value="{{inputWord}}"  bindinput="handleInputWord" auto-focus/>
+    </view>
+
+     <view class="form-item">
+      <textarea placeholder="请输入描述" value="{{inputDesc}}" bindinput="handleInputDesc" />
+     </view>
+
+     <view class="form-bottom">
+       <button  class='save-btn' bindtap="handleSaveAddWord">保存</button>
+     </view>
+
+  </view>
+</view>
+
+
+<view class="section" wx:if="{{showSentence}}">
+  <view class="operation-type">句子添加</view>
+  <view class="form-wraper">
+    <view class="form-item">
+      <input placeholder="请输入句子" value="{{inputSentence}}"  bindinput="handleInputSentence" auto-focus/>
+    </view>
+
+     <view class="form-item">
+      <textarea placeholder="请输入备注" value="{{inputSentenceDesc}}" bindinput="handleInputSentenceDesc" />
+     </view>
+
+     <view class="form-bottom">
+       <button  class='save-btn' bindtap="handleSaveAddSentence">保存</button>
+     </view>
+
+  </view>
+</view>
+
+
